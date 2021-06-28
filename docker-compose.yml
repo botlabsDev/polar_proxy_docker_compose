@@ -1,0 +1,11 @@
+version: "2.0"
+services:
+  polar_proxy:
+    build: ./polar_proxy
+    ports:
+      - "0.0.0.0:10443:10443" # TLS Port   (?)
+      - "0.0.0.0:10080:10080" # Cert HTTP  (?)
+      - "0.0.0.0:57012:57012" # PCAP over IP
+    volumes:
+      - ./volumes/pcaps:/polarproxy_pcaps
+      - ./volumes/certs:/home/polarproxy
