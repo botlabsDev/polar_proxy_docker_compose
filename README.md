@@ -3,10 +3,10 @@
 ## tl;dr
 
 ```bash
-git clone https://github.com/botlabsDev/polar_proxy_docker_compose.git
-cd polar_proxy_docker_compose
-docker-compose up --build -d
-ls volumes/pcaps/
+$ git clone https://github.com/botlabsDev/polar_proxy_docker_compose.git
+$ cd polar_proxy_docker_compose
+$ docker-compose up --build -d
+$ ls volumes/pcaps/
 
 ```
 
